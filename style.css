@@ -1,6 +1,4 @@
 body {
-   margin: 0 auto;
-   width: 1280px;
    font-family: 'Poppins', sans-serif;
 }
 
@@ -10,10 +8,14 @@ body {
    --color-hover: #48b67c;
 }
 
+.nav-link .activo {
+   color: var(--color-hover);
+}
+
 .nav-container {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-around;
    margin-top: 10px;
 }
 
@@ -37,7 +39,12 @@ body {
 .principal-container {
    display: flex;
    align-items: center;
+   justify-content: center;
    margin: 60px 0 80px;
+}
+
+.texto {
+   width: 40%;
 }
 
 .titulo-principal {
@@ -52,6 +59,7 @@ body {
    font-size: 24px;
    font-weight: 300;
    margin-bottom: 45px;
+   padding-right: 100px;
 }
 
 .boton {
@@ -69,9 +77,4 @@ body {
 
 .img-principal {
    width: 500px;
-}
-
-.servicios-container {
-   color: white;
-   background-color: var(--color-primario);
 }
