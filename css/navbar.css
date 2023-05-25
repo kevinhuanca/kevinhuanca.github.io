@@ -1,0 +1,23 @@
+.nav-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin-top: 10px;
+}
+
+.nav-list {
+   display: flex;
+   font-size: 24px;
+   font-weight: 300;
+   list-style: none;
+}
+
+.nav-link {
+   text-decoration: none;
+   margin: 0 20px;
+   color: var(--color-secundario);
+}
+
+.nav-link:hover {
+   color: var(--color-hover);
+}
