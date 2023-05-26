@@ -1,0 +1,41 @@
+.articulo {
+   width: 55%;
+   margin: 40px auto;
+}
+
+.titulo {
+   color: var(--color-primario);
+   font-size: 45px;
+   text-align: center;
+   margin-bottom: 30px;
+   font-weight: 700;
+}
+
+p {
+   color: var(--color-secundario);
+   font-size: 22px;
+   font-weight: 300;
+   margin-bottom: 15px;
+}
+
+.carrusel {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 15px;
+}
+
+.imagen {
+   margin: 0 10px;
+}
+
+.btnAnterior, .btnSiguiente {
+   border: solid 2px var(--color-secundario);
+   /* border-radius: 100%; */
+   background-color: #fff;
+   color: var(--color-secundario);
+   font-size: 20px;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+}
