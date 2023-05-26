@@ -12,6 +12,7 @@
    <link rel="stylesheet" href="./css/reset.css">
    <link rel="stylesheet" href="./css/base.css">
    <link rel="stylesheet" href="./css/navbar.css">
+   <link rel="stylesheet" href="./css/formulario.css">
    <link rel="shortcut icon" href="./img/logo-final.png" type="image/x-icon">
 </head>
 
@@ -28,6 +29,37 @@
          <a href="#"><img src="./img/ico-mail.png" alt="email" width="40px"></a>
       </div>
    </nav>
+
+   <section>
+      <img class="imagen" src="./img/planta.svg">
+      <form class="formulario" onsubmit="return validarFormulario()">
+         <div class="bloque">
+            <label for="nombre">Nombre</label>
+            <input class="input" type="text" id="nombre" required>
+            <div class="mensaje-error-vacio">*campo obligatorio.</div>
+         </div>
+         
+         <div class="bloque">
+            <label for="email">Email</label>
+            <input class="input" type="email" name="" id="email" required>
+            <div class="mensaje-error-vacio">*campo obligatorio.</div>
+         </div>
+
+         <div class="bloque">
+            <label for="tel">Celular</label>
+            <input class="input" type="tel" id="tel" required>
+            <div class="mensaje-error-vacio">*campo obligatorio.</div>
+         </div>
+
+         <div class="bloque">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="mensaje" name="" id="" required></textarea>
+            <div class="mensaje-error-vacio">*campo obligatorio.</div>
+         </div>
+
+         <button class="btnEnviar" type="submit">Enviar</button>
+       </form>
+   </section>
 </body>
 
 </html>

@@ -1,13 +1,15 @@
+:root {
+   --fuente-principal: 'Poppins', sans-serif;
+   --color-primario: #6CCB94;
+   --color-secundario: #5D5D5D;
+   --color-hover: #48b67c;
+   --color-error: #FF534D;
+}
+
 body {
-   font-family: 'Poppins', sans-serif;
+   font-family: var(--fuente-principal);
 }
 
 body::-webkit-scrollbar {
    display: none;
-}
-
-:root {
-   --color-primario: #6CCB94;
-   --color-secundario: #5D5D5D;
-   --color-hover: #48b67c;
 }
