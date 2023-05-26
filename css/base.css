@@ -2,6 +2,10 @@ body {
    font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+   display: none;
+}
+
 :root {
    --color-primario: #6CCB94;
    --color-secundario: #5D5D5D;
