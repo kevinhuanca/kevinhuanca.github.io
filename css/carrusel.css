@@ -1,0 +1,21 @@
+.carrusel {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 15px;
+}
+
+.imagen {
+   width: 90%;
+   margin: 0 10px;
+}
+
+.btnAnterior, .btnSiguiente {
+   border: solid 2px var(--color-secundario);
+   background-color: #fff;
+   color: var(--color-secundario);
+   font-size: 20px;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+}
