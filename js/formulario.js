@@ -14,16 +14,20 @@ let patronTel = /(\d){10,}$/;
 // let patronMensaje = ;
 
 function validarFormulario() {
+   let todoOk = 0;
+
    // NOMBRE
    nombre.style.border = "";
    errorNombre.style.display = "none"
    if (nombre.value == "") {
       nombre.style.border = "solid 2px var(--color-error)";
       errorNombre.style.display = "block";
+      todoOk--;
    } else if (!patronNombre.test(nombre.value)) {
       nombre.style.border = "solid 2px var(--color-error)";
       errorNombre.innerHTML = "*no se permiten números ni simbolos.";
       errorNombre.style.display = "block";
+      todoOk--;
    }
 
    // EMAIL
@@ -32,10 +36,12 @@ function validarFormulario() {
    if (email.value == "") {
       email.style.border = "solid 2px var(--color-error)";
       errorEmail.style.display = "block";
+      todoOk--;
    } else if (!patronEmail.test(email.value)) {
       email.style.border = "solid 2px var(--color-error)";
       errorEmail.innerHTML = "*no cumple las condiciones. Ej: kevin@gmail.com";
       errorEmail.style.display = "block";
+      todoOk--;
    }
 
    // TEL
@@ -44,10 +50,12 @@ function validarFormulario() {
    if (tel.value == "") {
       tel.style.border = "solid 2px var(--color-error)";
       errorTel.style.display = "block";
+      todoOk--;
    } else if (!patronTel.test(tel.value)) {
       tel.style.border = "solid 2px var(--color-error)";
       errorTel.innerHTML = "*solo se permiten números. Ej: 2664123123";
       errorTel.style.display = "block";
+      todoOk--;
    }
 
    // MENSAJE
@@ -56,6 +64,13 @@ function validarFormulario() {
    if (mensaje.value == "") {
       mensaje.style.border = "solid 2px var(--color-error)";
       errorMensaje.style.display = "block";
+      todoOk--;
+   }
+
+   // CARTEL DE ENVIADO
+   if (todoOk == 0) {
+      document.querySelector(".formulario").style.display = "none";
+      document.querySelector(".enviado").style.display = "block";
    }
 
    return false;

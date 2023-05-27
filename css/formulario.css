@@ -80,3 +80,9 @@ label {
    display: none;
    width: 200px;
 }
+
+.enviado {
+   width: 220px;
+   margin: 0 145px;
+   display: none;
+}
