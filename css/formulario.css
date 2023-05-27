@@ -12,7 +12,7 @@ section {
 .formulario {
    margin: 0 100px;
    padding: 50px;
-   border: dashed 4px var(--color-primario);
+   border: solid 4px var(--color-primario);
 }
 
 .bloque {
@@ -29,7 +29,7 @@ label {
 .input {
    width: 200px;
    height: 21px;
-   border: solid 3px var(--color-primario);
+   /* border: solid 3px var(--color-primario); */
 }
 
 .input:focus {
@@ -42,11 +42,15 @@ label {
    max-width: 250px;
    min-height: 21px;
    max-height: 150px;
-   border: solid 3px var(--color-primario);
+   /* border: solid 3px var(--color-primario); */
 }
 
 .mensaje:focus {
    outline: none;
+}
+
+.btn {
+   text-align: center;
 }
 
 .btnEnviar {
@@ -65,10 +69,14 @@ label {
    background-color: var(--color-hover);
 }
 
-.mensaje-error-vacio {
+.mensaje-error-nombre,
+.mensaje-error-email,
+.mensaje-error-tel,
+.mensaje-error-mensaje {
    margin-top: 3px;
    font-size: 14px;
    font-weight: 300;
    color: var(--color-error);
    display: none;
+   width: 200px;
 }
